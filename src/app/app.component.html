@@ -1,0 +1,69 @@
+<div class="container-fluid">
+  <div class="row mb-5">
+
+    <!-- Read all from locations array-->
+    <div class="col-12" *ngFor="let loc of locations; let i = index">
+      <div class="row mt-5" *ngFor="let originAddress of loc.origin_addresses; let j = index">
+
+        <div class="col-3" style="font-size:1.5em">
+          <div class="pb-2 border-bottom border-info">
+            <small class="text-muted">Source Location:</small><br>
+            <i icon iconname="map-marker"></i>&nbsp;
+            {{originAddress}}
+          </div>
+          
+        </div>
+
+        <!-- origin location starts -->
+        <div class="col-9 border-left border-info">
+
+         <span class="text-info"> Travelling to:</span>
+
+          <!-- destination card begins -->
+          <div class="row mb-4" *ngFor="let destination of loc.rows[j].elements; let k = index">
+
+            <div class="col-lg-5 mb-1 border-right pt-3 pb-2" style="font-size:1.3em">
+              <i icon iconname="long-arrow-right"></i>
+              &nbsp;&nbsp;&nbsp;
+              <i icon iconname="map-marker"></i>&nbsp;
+              {{loc.destination_addresses[k]}}
+            </div>
+
+            <div class="col-lg-7 mb-2">
+              <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr>
+                    <th style="width:30%">Distance:</th>
+                    <td>
+                      <i icon iconname="car"></i>&nbsp;
+                      {{destination.distance.text}}&nbsp;
+                      ({{destination.distance.value | metretokilometre}} km.)
+                      <div class="progress" style="height:4px">
+                      <div class="progress-bar" role="progressbar" [style.width]="(destination.distance.value / loc.rows[j].max * 100) + '%' "></div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>Duration:</th>
+                    <td>
+                      <i icon iconname="clock-o"></i>&nbsp;
+                      {{destination.duration.text}}&nbsp;
+                      ({{destination.duration.value | secondstominutes}} mins.)
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- destination card ends -->
+
+        </div>
+        <!-- origin location ends -->
+
+      </div>
+    </div>
+    <!-- ngFor ends-->
+
+  </div>
+</div>

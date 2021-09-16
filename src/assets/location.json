@@ -1,0 +1,153 @@
+[
+  {
+    "destination_addresses": [
+      "Washington, DC, USA",
+      "Philadelphia, PA, USA",
+      "Santa Barbara, CA, USA",
+      "Miami, FL, USA",
+      "Austin, TX, USA",
+      "Napa County, CA, USA"
+    ],
+    "origin_addresses": [
+      "New York, NY, USA"
+    ],
+    "rows": [
+      {
+        "elements": [
+          {
+            "distance": {
+              "text": "227 mi",
+              "value": 365468
+            },
+            "duration": {
+              "text": "3 hours 54 mins",
+              "value": 14064
+            },
+            "status": "OK"
+          },
+          {
+            "distance": {
+              "text": "94.6 mi",
+              "value": 152193
+            },
+            "duration": {
+              "text": "1 hour 44 mins",
+              "value": 6227
+            },
+            "status": "OK"
+          },
+          {
+            "distance": {
+              "text": "2,878 mi",
+              "value": 4632197
+            },
+            "duration": {
+              "text": "1 day 18 hours",
+              "value": 151772
+            },
+            "status": "OK"
+          },
+          {
+            "distance": {
+              "text": "1,286 mi",
+              "value": 2069031
+            },
+            "duration": {
+              "text": "18 hours 43 mins",
+              "value": 67405
+            },
+            "status": "OK"
+          },
+          {
+            "distance": {
+              "text": "1,742 mi",
+              "value": 2802972
+            },
+            "duration": {
+              "text": "1 day 2 hours",
+              "value": 93070
+            },
+            "status": "OK"
+          },
+          {
+            "distance": {
+              "text": "2,871 mi",
+              "value": 4620514
+            },
+            "duration": {
+              "text": "1 day 18 hours",
+              "value": 152913
+            },
+            "status": "OK"
+          }
+        ]
+      }
+    ],
+    "status": "OK"
+  },
+  {
+    "status": "OK",
+    "origin_addresses": [
+      "Vancouver, BC, Canada",
+      "Seattle, État de Washington, États-Unis"
+    ],
+    "destination_addresses": [
+      "San Francisco, Californie, États-Unis",
+      "Victoria, BC, Canada"
+    ],
+    "rows": [
+      {
+        "elements": [
+          {
+            "status": "OK",
+            "duration": {
+              "value": 340110,
+              "text": "3 days 22 hours"
+            },
+            "distance": {
+              "value": 1734542,
+              "text": "1077 mi"
+            }
+          },
+          {
+            "status": "OK",
+            "duration": {
+              "value": 24487,
+              "text": "6 hours 48 minutes"
+            },
+            "distance": {
+              "value": 129324,
+              "text": "80 mi"
+            }
+          }
+        ]
+      },
+      {
+        "elements": [
+          {
+            "status": "OK",
+            "duration": {
+              "value": 288834,
+              "text": "3 days 6 hours"
+            },
+            "distance": {
+              "value": 1489604,
+              "text": "925 mi"
+            }
+          },
+          {
+            "status": "OK",
+            "duration": {
+              "value": 14388,
+              "text": "4 hours 0 minutes"
+            },
+            "distance": {
+              "value": 135822,
+              "text": "84 mi"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
